@@ -9,6 +9,8 @@ edition = "2021"
 [workspace]
 members = [
     "database",
+    "errors",
+    "logging",
     "platform",
     "settings",
 ]
