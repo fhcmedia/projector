@@ -4,4 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+detect-desktop-environment = "0.2.0"
+[target.'cfg(target_os = "macos")'.dependencies]
 cacao = "0.3.2"
+[target.'cfg(target_os = "windows")'.dependencies]
+native-windows-gui = "1.0.12"
+[target.'cfg(target_os = "linux")'.dependencies]
+gtk4 = "0.6.2"
