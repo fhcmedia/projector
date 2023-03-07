@@ -1,11 +1,11 @@
 // Exports target os module
-#[cfg(target_os = "macos"]
+#[cfg(target_os = "macos")]
 pub mod macos;
 
-#[cfg(target_os = "windows"]
+#[cfg(target_os = "windows")]
 pub mod windows;
 
-#[cfg(target_os = "linux"]
+#[cfg(target_os = "linux")]
 pub mod linux;
 
 // TODO: Add unit testing for generic module export below

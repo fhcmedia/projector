@@ -804,6 +804,9 @@ dependencies = [
 [[package]]
 name = "projector"
 version = "0.1.0"
+dependencies = [
+ "platform",
+]
 
 [[package]]
 name = "quote"
