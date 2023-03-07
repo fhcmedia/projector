@@ -1,5 +1,7 @@
+use platform;
+
 fn main() {
-    println!("Hello, world!");
+    platform::window::spawn;
 }
 
 
