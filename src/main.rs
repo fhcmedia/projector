@@ -1,7 +1,7 @@
 use platform;
 
 fn main() {
-    platform::spawn();
+    platform::macos::window::spawn();
 }
 
 

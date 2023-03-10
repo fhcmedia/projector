@@ -14,6 +14,6 @@ impl AppDelegate for Application {
     }
 }
 
-fn spawn() {
+pub fn spawn() {
     App::new("com.projector", Application::default()).run();
 }
