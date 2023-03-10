@@ -12,7 +12,7 @@ pub trait AbstractApplication<T> {
     fn create() -> Self;
     fn name(&mut self, name: &str) -> Self;
     fn application_id(&mut self, id: &str) -> Self;
-    fn connect(&self, window: Window<T>);
+    fn run(&self, window: Window<T>);
 }
 
 // Application 
@@ -31,7 +31,7 @@ pub struct ApplicationProperties {
 // Platform abstracted window
 pub trait AbstractWindow<T> {
     fn create() -> Self;
-    fn title(%muit self, title: &str) -> Self;
+    fn title(&mut self, title: &str) -> Self;
     fn default_width(self, width: i32) -> Self;
     fn default_height(self, height: i32) -> Self;
     fn set_width(self, width: i32) -> Self;
@@ -51,6 +51,6 @@ pub struct WindowProperties {
     default_width: i32,
     default_height: i32,
     width: i32,
-    height i32,
+    height: i32,
     title: String
 }
