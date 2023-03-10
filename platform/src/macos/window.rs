@@ -1,5 +1,6 @@
 use cacao::appkit::{App, AppDelegate};
 use cacao::appkit::window::Window;
+use crate::{AbstractWindow};
 
 #[derive(Default)]
 struct Application {
@@ -14,6 +15,8 @@ impl AppDelegate for Application {
     }
 }
 
-pub fn spawn() {
-    App::new("com.projector", Application::default()).run();
+impl AbstractWindow for Window {
+    fn spawn() {
+        App::new("com.projector", Application::default()).run();
+    }
 }
