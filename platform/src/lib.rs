@@ -6,5 +6,3 @@ pub mod windows;
 #[cfg(target_os = "linux")]
 pub mod linux;
 
-// TODO: Add unit testing for generic module export below
-

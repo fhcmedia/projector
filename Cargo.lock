@@ -805,6 +805,10 @@ dependencies = [
 name = "projector"
 version = "0.1.0"
 dependencies = [
+ "database",
+ "errors",
+ "logging",
+ "modules",
  "platform",
 ]
 

@@ -17,4 +17,9 @@ members = [
 ]
 
 [dependencies]
+database = { path = "./database" }
+errors = { path = "./errors/" }
+logging = { path = "./logging" }
+modules = { path = "./modules" }
 platform = { path = "./platform" }
+
