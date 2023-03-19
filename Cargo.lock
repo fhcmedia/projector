@@ -608,10 +608,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "modules"
-version = "0.1.0"
-
-[[package]]
 name = "native-windows-gui"
 version = "1.0.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -808,7 +804,6 @@ dependencies = [
  "database",
  "errors",
  "logging",
- "modules",
  "platform",
 ]
 
