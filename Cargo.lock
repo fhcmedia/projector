@@ -148,6 +148,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bd0c93bb4b0c6d9b77f4435b0ae98c24d17f1c45b2ff844c6151a07256ca923b"
 
 [[package]]
+name = "errors"
+version = "0.1.0"
+
+[[package]]
 name = "field-offset"
 version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -576,6 +580,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "logging"
+version = "0.1.0"
+
+[[package]]
 name = "malloc_buf"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -598,6 +606,10 @@ checksum = "d61c719bcfbcf5d62b3a09efa6088de8c54bc0bfcd3ea7ae39fcc186108b8de1"
 dependencies = [
  "autocfg",
 ]
+
+[[package]]
+name = "modules"
+version = "0.1.0"
 
 [[package]]
 name = "native-windows-gui"
@@ -792,6 +804,13 @@ dependencies = [
 [[package]]
 name = "projector"
 version = "0.1.0"
+dependencies = [
+ "database",
+ "errors",
+ "logging",
+ "modules",
+ "platform",
+]
 
 [[package]]
 name = "quote"
