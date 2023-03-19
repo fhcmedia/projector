@@ -31,7 +31,7 @@ pub struct ApplicationProperties {
 // Platform abstracted window
 pub trait AbstractWindow<T> {
     fn create() -> Self;
-    fn title(&mut self, title: &str) -> Self;
+    fn title(self, title: &str) -> Self;
     fn default_width(self, width: i32) -> Self;
     fn default_height(self, height: i32) -> Self;
     fn set_width(self, width: i32) -> Self;

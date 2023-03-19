@@ -47,7 +47,7 @@ impl AbstractWindow<NSWindow> for Window<NSWindow> {
         }
     }
 
-    fn title(&mut self, title: &str) -> Self {
+    fn title(mut self, title: &str) -> Self {
         self.properties.title = title.to_string();
         return self
     }

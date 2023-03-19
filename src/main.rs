@@ -17,5 +17,5 @@ fn main() {
     // the same style of creation as 'app' and 'window'.
     
     // Start app
-    app.connect(window);
+    app.run(window);
 }
