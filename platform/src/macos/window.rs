@@ -3,16 +3,16 @@ use cacao::appkit::window::Window as NSWindow;
 use crate::{AbstractApplication, Application, AbstractWindow, Window};
 
 // Implement App Delegation
-impl AppDelegate for Application {
+impl AppDelegate for Window<NSWindow> {
     fn did_finish_launching(&self) {
         self.window.set_minimum_content_size(
             self.properties.default_width,
             self.properties.default_height
         );
         self.window.set_title(self.properties.title.as_str());
-        self.window.show();
+            self.window.show();
+        }
     }
-}
 
 // Implement AbstractApplication
 impl AbstractApplication<NSWindow> for Application {
@@ -24,16 +24,16 @@ impl AbstractApplication<NSWindow> for Application {
 
     fn name(&mut self, name: &str) -> Self {
         self.properties.name = name.to_string();
-        self.clone()
+        return self.clone()
     }
 
     fn application_id(&mut self, id: &str) -> Application {
-        self.properties.app_id = id.to_string();
-        self.clone()
+        self.properties.application_id = id.to_string();
+        return self.clone()
     }
 
     fn run(&self, window: Window<NSWindow>) {
-        App::new(self.properties.app_id.as_str(), window).run();
+        App::new(self.properties.application_id.as_str(), window).run();
     }
 }
 
@@ -49,26 +49,26 @@ impl AbstractWindow<NSWindow> for Window<NSWindow> {
 
     fn title(&mut self, title: &str) -> Self {
         self.properties.title = title.to_string();
-        self
+        return self
     }
 
     fn default_width(mut self, width: i32) -> Self {
         self.properties.default_width = width;
-        self
+        return self
     }
 
     fn default_height(mut self, height: i32) -> Self {
         self.properties.default_height = height;
-        self
+        return self
     }
 
     fn set_width(mut self, width: i32) -> Self {
         self.properties.width = width;
-        self
+        return self
     }
 
     fn set_height(mut self, height: i32) -> Self {
         self.properties.height = height;
-        self
+        return self
     }
 }
