@@ -1,5 +1,5 @@
 // Libraries
-use platform::{Application, Window};
+use platform::{AbstractApplication, AbstractWindow, Application, Window};
 
 // Main
 fn main() {
@@ -10,7 +10,7 @@ fn main() {
     // Create window
     let window = Window::create()
         .default_width(400)
-        .default_hieght(400)
+        .default_height(400)
         .title("FHCC Projector");
 
     // NOTE: Any windows/tabs/lists/any content will follow 
