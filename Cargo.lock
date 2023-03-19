@@ -733,6 +733,7 @@ dependencies = [
  "cacao",
  "detect-desktop-environment",
  "gtk4",
+ "log",
  "native-windows-gui",
 ]
 
