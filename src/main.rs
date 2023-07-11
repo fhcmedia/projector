@@ -1,8 +1,14 @@
 // Libraries
 use platform::{AbstractApplication, AbstractWindow, Application, Window};
+use log::{debug, warn, error, info};
+
 
 // Main
 fn main() {
+    // Init logger
+    env_logger::init();
+    info!("Plz work");
+
     // Create application
     let app = Application::create()
         .application_id("com.projector");
@@ -18,4 +24,5 @@ fn main() {
     
     // Start app
     app.run(window);
+    info!("Test log msg...");
 }
