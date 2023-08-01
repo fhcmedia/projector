@@ -35,6 +35,5 @@ impl AbstractApplication<NSWindow> for Application {
 
     fn run(&self, window: Window<NSWindow>) {
         App::new(self.properties.application_id.as_str(), window).run();
-        info!("App created, fix this log message later!");
     }
 }

@@ -203,10 +203,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "errors"
-version = "0.1.0"
-
-[[package]]
 name = "field-offset"
 version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -664,10 +660,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "logging"
-version = "0.1.0"
-
-[[package]]
 name = "malloc_buf"
 version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -888,9 +880,7 @@ version = "0.1.0"
 dependencies = [
  "database",
  "env_logger",
- "errors",
  "log",
- "logging",
  "platform",
 ]
 

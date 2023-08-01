@@ -9,16 +9,12 @@ edition = "2021"
 [workspace]
 members = [
     "database",
-    "errors",
-    "logging",
     "platform",
     "settings",
 ]
 
 [dependencies]
 database = { path = "./database" }
-errors = { path = "./errors/" }
-logging = { path = "./logging" }
 platform = { path = "./platform" }
 log = "0.4.17"
 env_logger = "0.10.0"

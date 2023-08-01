@@ -1,17 +1,17 @@
 // Libraries
 use platform::{AbstractApplication, AbstractWindow, Application, Window};
-use log::{debug, warn, error, info};
-
+use log::{debug, error, log_enabled, info, Level};
 
 // Main
 fn main() {
-    // Init logger
     env_logger::init();
-    info!("Plz work");
+
+    debug!("this is a test logging {}", "message");
 
     // Create application
     let app = Application::create()
         .application_id("com.projector");
+        // Add version info to trait Application
 
     // Create window
     let window = Window::create()
@@ -24,5 +24,4 @@ fn main() {
     
     // Start app
     app.run(window);
-    info!("Test log msg...");
 }
