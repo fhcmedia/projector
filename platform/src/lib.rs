@@ -1,3 +1,5 @@
+#![warn(missing_docs, unused_variables)]
+
 // Exports target os module
 #[cfg(target_os = "macos")]
 pub mod macos;
