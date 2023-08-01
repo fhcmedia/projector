@@ -1,6 +1,6 @@
 // Libraries
 use platform::{AbstractApplication, AbstractWindow, Application, Window};
-use log::{debug, error, log_enabled, info, Level};
+use log::{debug};
 
 // Main
 fn main() {

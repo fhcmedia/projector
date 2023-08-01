@@ -1,4 +1,3 @@
-use log::{info};
 use cacao::appkit::{App, AppDelegate};
 use cacao::appkit::window::Window as NSWindow;  
 use crate::{AbstractApplication, Application, Window};
