@@ -7,9 +7,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
+  target-macos:
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -17,4 +16,6 @@ jobs:
       run: cargo build
     - name: Test
       run: cargo test
+
+# TODO: Add windows and linux build targets as platform is implemented! 
 # TODO: Add lint, benchmark, and possibly docgen steps later!
