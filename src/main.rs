@@ -6,7 +6,7 @@ use log::{debug};
 fn main() {
     env_logger::init();
 
-    debug!("this is a test logging {}", "message");
+    debug!("t his is a test logging {}", "message");
 
     // Create application
     let app = Application::create()
