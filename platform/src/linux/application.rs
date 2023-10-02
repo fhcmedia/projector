@@ -34,7 +34,7 @@ impl AbstractApplication<ApplicationWindowBuilder> for Application {
                 .application(app)
                 .build();
 
-        //window.show();
+            window.show();
         });
         app.run();
     }
