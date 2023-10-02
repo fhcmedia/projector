@@ -6,11 +6,11 @@ use log::{debug};
 fn main() {
     env_logger::init();
 
-    debug!("t his is a test logging {}", "message");
+    debug!("this is a test logging {}", "message");
 
     // Create application
     let app = Application::create()
-        .application_id("com.projector");
+        .application_id("com.fhcmedia.projector");
         // Add version info to trait Application
 
     // Create window
